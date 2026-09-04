@@ -1,32 +1,32 @@
-# React + TypeScript + Vite
+# ResQX — Virtual IoT Hardware Demo
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+> Software-only virtual hardware demonstration for the ResQX AI-Powered Emergency Operations Command Center.
 
-Currently, two official plugins are available:
+## Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+ResQX is an emergency traffic-priority system designed to reduce ambulance delays at traffic junctions.
 
-## React Compiler
+This repository contains the **Virtual IoT Hardware Layer** of ResQX.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+The purpose of this demo is to demonstrate how an emergency event can be detected, processed by a virtual ESP32 edge controller, converted into GPIO output signals, and used to control virtual traffic signals.
 
-## Expanding the Oxlint configuration
+The complete demonstration works **without physical hardware** and **without Wokwi**.
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
-
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
-```
-
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+```text
+Ambulance Emergency
+        ↓
+Virtual Emergency Sensor
+        ↓
+Virtual ESP32
+        ↓
+Virtual GPIO
+        ↓
+Traffic Signal Controller
+        ↓
+Emergency Green Priority
+        ↓
+Ambulance Passes
+        ↓
+Signal Restoration
+        ↓
+Normal Traffic
