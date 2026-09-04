@@ -1,32 +1,50 @@
-# ResQX — Virtual IoT Hardware Demo
+# 🚑 ResQX — Virtual IoT Hardware Emergency Demo
 
-> Software-only virtual hardware demonstration for the ResQX AI-Powered Emergency Operations Command Center.
+<p align="center">
+  <b>AI-Powered Emergency Operations Command Center — Virtual Hardware Layer</b>
+</p>
 
-## Overview
+<p align="center">
+  🚑 Emergency Detection • 🧠 Virtual ESP32 • ⚡ Virtual GPIO • 🚦 Smart Traffic Signals
+</p>
 
-ResQX is an emergency traffic-priority system designed to reduce ambulance delays at traffic junctions.
+---
 
-This repository contains the **Virtual IoT Hardware Layer** of ResQX.
+## 🌐 Project Overview
 
-The purpose of this demo is to demonstrate how an emergency event can be detected, processed by a virtual ESP32 edge controller, converted into GPIO output signals, and used to control virtual traffic signals.
+**ResQX** is an emergency traffic-management system designed to reduce ambulance delays caused by traffic congestion and red signals.
 
-The complete demonstration works **without physical hardware** and **without Wokwi**.
+This repository contains the **Virtual IoT Hardware Demonstration Layer** of ResQX.
+
+The purpose of this project is to demonstrate how the software control system would interact with real-world embedded hardware **without requiring physical electronic components**.
+
+Instead of connecting an actual ESP32, sensors, LEDs, relays, or traffic-light hardware, this project provides a **software-in-the-loop virtual hardware environment**.
+
+The complete demonstration runs directly in the browser.
+
+---
+
+# 🎯 Purpose
+
+The hardware layer demonstrates the following real-world concept:
 
 ```text
-Ambulance Emergency
+🚑 Ambulance Emergency
         ↓
-Virtual Emergency Sensor
+📡 Emergency Detection
         ↓
-Virtual ESP32
+🧠 ESP32 Edge Controller
         ↓
-Virtual GPIO
+📡 Command Received
         ↓
-Traffic Signal Controller
+⚡ GPIO Output
         ↓
-Emergency Green Priority
+🚦 Traffic Signal Controller
         ↓
-Ambulance Passes
+🟢 Emergency Green Signal
         ↓
-Signal Restoration
+🚑 Ambulance Passes
         ↓
-Normal Traffic
+🔄 Signal Restoration
+        ↓
+🚦 Normal Traffic
